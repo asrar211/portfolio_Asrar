@@ -8,10 +8,39 @@ export const Socials = () => {
           <h1 className="text-[15px] font-[300]">Online Presence</h1>
         </div>
         <div className="mt-3 mx-3 flex flex-col gap-3">
-            <SocialLinks title="@_asrar_ali" icon={<IconBrandX color="gray" size={19}/>} />
-            <SocialLinks title="@asrar.env" icon={<IconBrandInstagram color="gray" size={19}/>} />
-            <SocialLinks title="@mohdasrar" icon={<IconBrandLinkedin color="gray" size={19}/>} />
-        </div>
+  <a
+    href="https://x.com/_asrar_ali"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <SocialLinks
+      title="@_asrar_ali"
+      icon={<IconBrandX color="gray" size={19} />}
+    />
+  </a>
+
+  <a
+    href="https://instagram.com/asrar.env"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <SocialLinks
+      title="@asrar.env"
+      icon={<IconBrandInstagram color="gray" size={19} />}
+    />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/mohammad-asrar-4a897b18b/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <SocialLinks
+      title="@mohdasrar"
+      icon={<IconBrandLinkedin color="gray" size={19} />}
+    />
+  </a>
+</div>
     </div>
   )
 }       

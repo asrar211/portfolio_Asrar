@@ -1,6 +1,6 @@
 import { IconPackage } from "@tabler/icons-react"
-import img1 from '../assets/a.jpg';
-import img2 from '../assets/a.jpg';
+import img1 from '../assets/p-1.png';
+import img2 from '../assets/p-2.png';
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
@@ -24,7 +24,7 @@ export const Works = () => {
                 ease: "linear",
                 repeatType: "loop",
             }}
-             key={index} src={img} alt={`img-${index}`} className="w-20 rounded-xl mx-1" />
+             key={index} src={img} alt={`img-${index}`} className="w-30 object-cover rounded-xl mx-1" />
         ))}
         </div>
         <button className="text-[14px] cursor-pointer bg-gradient-to-r from-purple-400 via-blue-500 to-purple-400 text-neutral-900 ring-4 rounded-xl py-2 px-7 -translate-y-8"><Link to='/works'>View Works</Link></button>

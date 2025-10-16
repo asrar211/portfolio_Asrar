@@ -29,9 +29,26 @@ export const Hero = () => {
       </div>
 
       <div className="flex items-center mt-5 gap-2 cursor-pointer">
-        <h4 className="text-[14px] text-neutral-300 flex gap-1 w-full items-center bg-neutral-900/70 border border-neutral-800/50 rounded-md p-3"><IconBrandTelegram size={20} color="pink"/> Telegram Me </h4>
-        <h4 className="text-[14px] text-neutral-300 flex gap-1 w-full items-center bg-neutral-900/70 border border-neutral-800/50 rounded-md p-3"><IconBrandWhatsapp size={20} color="pink"/> Whatsapp Me </h4>
-      </div>
+  <a
+    href="https://t.me/asrar21154"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[14px] text-neutral-300 flex gap-1 w-full items-center bg-neutral-900/70 border border-neutral-800/50 rounded-md p-3 hover:bg-neutral-800/70 transition-colors"
+  >
+    <IconBrandTelegram size={20} color="pink" />
+    Telegram Me
+  </a>
+
+  <a
+    href="https://wa.me/917889789033"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[14px] text-neutral-300 flex gap-1 w-full items-center bg-neutral-900/70 border border-neutral-800/50 rounded-md p-3 hover:bg-neutral-800/70 transition-colors"
+  >
+    <IconBrandWhatsapp size={20} color="pink" />
+    WhatsApp Me
+  </a>
+</div>
     </div>
   )
 }

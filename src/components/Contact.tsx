@@ -9,9 +9,29 @@ export const Contact = () => {
         <p className="text-[13px] text-center mt-1 text-neutral-400 font-light">Let's Make Magic Happen Together!</p>
     </div>    
     <div>
-        <ContactIcons title="Email Me" icon={<IconMail color="yellow" size={19}/>} />
-        <ContactIcons title="Schedule a Call" icon={<IconPhoneCall color="yellow" size={19}/>} />
-    </div>
+  <a
+    href="mailto:aliasrar84@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <ContactIcons
+      title="Email Me"
+      icon={<IconMail color="yellow" size={19} />}
+    />
+  </a>
+
+  <a
+    href="https://wa.me/917889789033?text=Hi%20Asrar!%20I%20would%20like%20to%20schedule%20a%20call%20with%20you."
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <ContactIcons
+      title="Schedule a Call"
+      icon={<IconPhoneCall color="yellow" size={19} />}
+    />
+  </a>
+</div>
+
     </div>
   )
 }

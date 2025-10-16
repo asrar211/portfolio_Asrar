@@ -4,12 +4,22 @@ import { IconPlus, IconFlagFilled, IconMoodHappyFilled, IconStarFilled, IconFile
 export const Showcase = () => {
   return (
     <div className=" mx-auto mt-5 grid grid-cols-2 md:grid-cols-3 gap-4">
-        <ShowCard title="56" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Projects" achievementIcon={<IconFlagFilled size={17} color="yellow"/>}/>
-        <ShowCard title="23" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Happy Clients" achievementIcon={<IconMoodHappyFilled size={17} color="yellow"/>}/>
-        <ShowCard title="01" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Year Expertise" achievementIcon={<IconStarFilled size={17} color="yellow"/>}/>
+        <ShowCard title="10" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Projects" achievementIcon={<IconFlagFilled size={17} color="yellow"/>}/>
+        <ShowCard title="8" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Happy Clients" achievementIcon={<IconMoodHappyFilled size={17} color="yellow"/>}/>
+        <ShowCard title="02" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Year Expertise" achievementIcon={<IconStarFilled size={17} color="yellow"/>}/>
         <div className="md:hidden flex flex-col items-center justify-center p-4 bg-neutral-950 border border-neutral-900 rounded-xl">
-            <p className="flex items-center gap-2 text-[15px] font-light">Resume <span className="bg-neutral-800 p-1.5 rounded-md cursor-pointer"><IconFileDownloadFilled color="yellow" size={19}/></span></p>
-        </div>
+  <a
+    href="https://docs.google.com/document/d/1dUm-gZH4E4Ko4x_Ot83Lnbx8SH4nWygCJu5JStZU3Ug/preview"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-[15px] font-light"
+  >
+    Resume
+    <span className="bg-neutral-800 p-1.5 rounded-md cursor-pointer">
+      <IconFileDownloadFilled color="yellow" size={19} />
+    </span>
+  </a>
+</div>
     </div>
   )
 }

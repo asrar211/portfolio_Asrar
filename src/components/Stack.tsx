@@ -1,4 +1,4 @@
-import { IconBrandDocker, IconBrandNextjs, IconBrandNodejs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconStack2Filled } from "@tabler/icons-react"
+import { IconBrandDocker, IconBrandFramerMotion, IconBrandNextjs, IconBrandNodejs, IconBrandOpenai, IconBrandPrisma, IconBrandTailwind, IconBrandTypescript, IconStack2Filled } from "@tabler/icons-react"
 
 export const Stack = () => {
   return (
@@ -9,11 +9,13 @@ export const Stack = () => {
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
           <StackItem title="Next.js" icon={<IconBrandNextjs size={17} color="gray" />} />
-          <StackItem title="ReactJs" icon={<IconBrandReact size={17} color="gray" />} />
           <StackItem title="Node.js" icon={<IconBrandNodejs size={17} color="gray" />} />
-          <StackItem title="Docker" icon={<IconBrandDocker size={17} color="gray" />} />
           <StackItem title="Typescript" icon={<IconBrandTypescript size={17} color="gray" />} />
-          <StackItem title="Tailwind" icon={<IconBrandTailwind size={17} color="gray" />} />
+          <StackItem title="TailwindCss" icon={<IconBrandTailwind size={17} color="gray" />} />
+          <StackItem title="Motion" icon={<IconBrandFramerMotion size={17} color="gray" />} />
+          <StackItem title="Prisma" icon={<IconBrandPrisma size={17} color="gray" />} />
+          <StackItem title="OpenAI" icon={<IconBrandOpenai size={17} color="gray" />} />
+          <StackItem title="Docker" icon={<IconBrandDocker size={17} color="gray" />} />
         </div>
     </div>
   )

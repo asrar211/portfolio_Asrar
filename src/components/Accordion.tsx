@@ -1,65 +1,81 @@
-import { IconArrowDown, IconCode, IconDiscountCheck, IconPaintFilled, IconPlane, IconStarsFilled, IconTestPipe} from "@tabler/icons-react"
+import {
+  IconArrowDown,
+  IconCode,
+  IconDiscountCheck,
+  IconPaintFilled,
+  IconPlane,
+  IconStarsFilled,
+  IconTestPipe,
+} from "@tabler/icons-react";
 import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react"
+import { useState } from "react";
 
 export const Accordion = () => {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-    const items = [
-        {
+  const items = [
+    {
       title: "Requirement Analysis",
       icon: <IconDiscountCheck color="gray" size={19} />,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+        "We begin by understanding your goals, target audience, and business needs. Every detail—features, design preferences, and technical constraints—is documented to ensure a clear roadmap before we write a single line of code.",
     },
     {
       title: "Planning",
       icon: <IconPlane color="gray" size={19} />,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+        "Once requirements are clear, we create a detailed plan outlining milestones, technologies, and timelines. This phase ensures alignment between our vision and your expectations before development begins.",
     },
     {
       title: "Designing",
       icon: <IconPaintFilled color="gray" size={19} />,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+        "Our design team crafts visually stunning, user-centered interfaces that reflect your brand identity. We focus on usability, accessibility, and consistency across all screens and devices.",
     },
     {
       title: "Development",
       icon: <IconCode color="gray" size={19} />,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+        "The design comes to life through clean, efficient, and scalable code. We follow best practices, implement responsive layouts, and ensure your product is optimized for performance and security.",
     },
     {
       title: "Testing & Launch",
       icon: <IconTestPipe color="gray" size={19} />,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+        "Before going live, every feature undergoes rigorous testing—from functionality and responsiveness to performance and security checks. Once approved, we deploy the project and monitor its launch for a seamless user experience.",
     },
-    ]
-  return (
-    <div className=" mt-5 min-[1320px]:h-[26rem]  mx-auto py-4 bg-neutral-950 border border-neutral-900 rounded-xl ">
-        <div className="relative flex flex-col items-center gap-1">
-          <h4 className="flex gap-1 items-center text-[13px] text-neutral-400 font-light"><span><IconStarsFilled size={17} color="yellow"/></span>Work Process</h4>
-          <h1 className="text-[15px] font-[300]">Workflow Highlights</h1>
-        <hr className="border-neutral-800 my-2 absolute -bottom-4 inset-x-0 " />
-        </div>
+  ];
 
-         <div className="mt-5 min-[1320px]:py-5 px-4 min-[1320px]:px-2 flex flex-col gap-3">
-            {items.map((item, index) => (
-              <AccordionItem
-                key={index}
-                title={item.title}
-                icon={item.icon}
-                description={item.description}
-                isOpen={openIndex === index}
-                onToggle={() => setOpenIndex(openIndex === index ? null : index)}
-              />
-            ))}
-         </div>
+  return (
+    <div className="mt-5 min-[1320px]:h-[26rem] mx-auto py-4 bg-neutral-950 border border-neutral-900 rounded-xl">
+      <div className="relative flex flex-col items-center gap-1">
+        <h4 className="flex gap-1 items-center text-[13px] text-neutral-400 font-light">
+          <span>
+            <IconStarsFilled size={17} color="yellow" />
+          </span>
+          Work Process
+        </h4>
+        <h1 className="text-[15px] font-[300]">Workflow Highlights</h1>
+        <hr className="border-neutral-800 my-2 absolute -bottom-4 inset-x-0" />
+      </div>
+
+      <div className="mt-5 min-[1320px]:py-5 px-4 min-[1320px]:px-2 flex flex-col gap-3">
+        {items.map((item, index) => (
+          <AccordionItem
+            key={index}
+            title={item.title}
+            icon={item.icon}
+            description={item.description}
+            isOpen={openIndex === index}
+            onToggle={() =>
+              setOpenIndex(openIndex === index ? null : index)
+            }
+          />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
 function AccordionItem({
   title,
@@ -73,28 +89,34 @@ function AccordionItem({
   isOpen: boolean;
   onToggle: () => void;
   description: string;
-}) {    return (
-        <div className="min-[1320px]:py-1 min-[1320px]:cursor-pointer bg-neutral-900 border border-neutral-800 rounded-xl">
-        <div className="flex p-2 justify-between items-center ">
-                <div>
-                    <h1 className="text-[13px] text-neutral-400 font-light flex gap-1 items-center"><span>{icon}</span>{title}</h1>
-                </div>
-                <div>
-                    <button
-                     onClick={onToggle} 
-                      className="px-2 min-[1320px]:hidden pt-2 cursor-pointer bg-neutral-800 border border-neutral-700/50 rounded-lg">
-                    <motion.span 
-                     initial={{rotate: 0}}
-                     animate={{rotate: isOpen ? 180 : 0}}
-                    transition={{duration: 0.4, ease: "easeInOut"}}
-                    className="inline-block "
-                     ><IconArrowDown color="gray" size={19}/>
-                     </motion.span>
-                     </button>
-                </div>
+}) {
+  return (
+    <div className="min-[1320px]:py-1 min-[1320px]:cursor-pointer bg-neutral-900 border border-neutral-800 rounded-xl">
+      <div className="flex p-2 justify-between items-center">
+        <div>
+          <h1 className="text-[13px] text-neutral-400 font-light flex gap-1 items-center">
+            <span>{icon}</span>
+            {title}
+          </h1>
+        </div>
+        <div>
+          <button
+            onClick={onToggle}
+            className="px-2 min-[1320px]:hidden pt-2 cursor-pointer bg-neutral-800 border border-neutral-700/50 rounded-lg"
+          >
+            <motion.span
+              initial={{ rotate: 0 }}
+              animate={{ rotate: isOpen ? 180 : 0 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="inline-block"
+            >
+              <IconArrowDown color="gray" size={19} />
+            </motion.span>
+          </button>
+        </div>
+      </div>
 
-                </div>
-                <AnimatePresence initial={false}>
+      <AnimatePresence initial={false}>
         {isOpen && (
           <motion.div
             key="content"
@@ -118,6 +140,6 @@ function AccordionItem({
           </motion.div>
         )}
       </AnimatePresence>
-            </div>
-    )
+    </div>
+  );
 }
