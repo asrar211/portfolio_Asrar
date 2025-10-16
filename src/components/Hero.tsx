@@ -25,7 +25,7 @@ export const Hero = () => {
         <p className="flex items-center gap-1 font-light text-[12px] text-neutral-200 py-1 px-2 rounded-full bg-neutral-900 border border-neutral-800"><span><IconWorld size={17} color="pink"/></span>Kashmiri, English & Urdu</p>
         <p className="flex items-center gap-1 font-light text-[12px] text-neutral-200 py-1 px-2 rounded-full bg-neutral-900 border border-neutral-800"><span><IconClockHour12Filled size={17} color="pink"/></span>IST</p>
         <p className="flex items-center gap-1 font-light text-[12px] text-neutral-200 py-1 px-2 rounded-full bg-neutral-900 border border-neutral-800"><span><IconSchool size={17} color="pink"/></span>Software Engineer</p>
-        <p className="flex items-center gap-1 font-light text-[12px] text-neutral-200 py-1 px-2 rounded-full bg-neutral-900 border border-neutral-800"><span><IconContract size={17} color="pink"/></span>SSM College</p>
+        <p className="flex items-center gap-1 font-light text-[12px] text-neutral-200 py-1 px-2 rounded-full bg-neutral-900 border border-neutral-800"><span><IconContract size={17} color="pink"/></span>SSM College of Engineering</p>
       </div>
 
       <div className="flex items-center mt-5 gap-2 cursor-pointer">
