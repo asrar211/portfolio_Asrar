@@ -1,3 +1,4 @@
+import { IconCrown, IconHome, IconServer } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
@@ -14,7 +15,7 @@ export const Navbar = () => {
           }`
         }
       >
-        <span className="text-blue-500">•</span> About
+        <h4 className="flex items-center gap-1"><IconHome size={17}/>About</h4> 
       </NavLink>
 
       <NavLink
@@ -25,7 +26,7 @@ export const Navbar = () => {
           }`
         }
       >
-        <span className="text-blue-500">•</span> Works
+        <h4 className="flex items-center gap-1"><IconCrown size={17}/>Works</h4> 
       </NavLink>
 
       <NavLink
@@ -36,7 +37,7 @@ export const Navbar = () => {
           }`
         }
       >
-        <span className="text-blue-500">•</span> Services
+        <h4 className="flex items-center gap-1"><IconServer size={17}/>Services</h4> 
       </NavLink>
     </div>
   );
