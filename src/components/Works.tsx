@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export const Works = () => {
     const imgs = [img1, img2, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1];
   return (
-    <div className="max-[768px]:max-w-[85%] mt-5 mx-auto bg-neutral-950 border border-neutral-900 rounded-xl px-0 pt-4">
+    <div className=" mt-5 mx-auto bg-neutral-950 border border-neutral-900 rounded-xl px-0 pt-4">
         <div className="flex flex-col items-center gap-1">
           <h4 className="flex gap-1 items-center text-[13px] text-neutral-400 font-light"><span><IconPackage size={17} color="yellow"/></span>Projects</h4>
           <h1 className="text-[15px] font-[300]">Works Gallery</h1>

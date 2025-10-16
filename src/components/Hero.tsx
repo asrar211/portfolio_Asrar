@@ -7,7 +7,7 @@ export const Hero = () => {
     "Designer",
   ]
   return (
-    <div className='h-[23rem] max-[768px]:max-w-[85%] mt-5 bg-neutral-950 rounded-xl border border-neutral-900 px-4 py-10 mx-auto'>
+    <div className='h-[23rem] mt-5 bg-neutral-950 rounded-xl border border-neutral-900 px-4 py-10 mx-auto'>
       <div className="flex gap-4">
         <img className="rounded-xl" width={90} height={90} src={img} alt="Placeholder" />
         <div>

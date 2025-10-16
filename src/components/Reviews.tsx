@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export const Reviews = () => {
   return (
-    <div className=" h-[26rem] max-[768px]:max-w-[85%] overflow-hidden mt-5 bg-neutral-950 border border-neutral-900 rounded-xl mx-auto relative">
+    <div className=" h-[26rem] overflow-hidden mt-5 bg-neutral-950 border border-neutral-900 rounded-xl mx-auto relative">
          <div className="z-20 flex flex-col items-center gap-1 shadow-xl shadow-neutral-950 border-b border-neutral-800 pt-4 pb-2 w-full bg-neutral-950 relative">
         <h4 className="flex gap-1 items-center text-[13px] text-neutral-400 font-light">
           <span>

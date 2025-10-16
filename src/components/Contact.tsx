@@ -2,7 +2,7 @@ import { IconCrown, IconMail, IconPhoneCall } from "@tabler/icons-react"
 
 export const Contact = () => {
   return (
-    <div className="mb-5 min-[1320px]:h-[19.8rem] h-[16rem] max-[768px]:max-w-[85%] mt-5  mx-auto py-4 bg-neutral-950 border border-neutral-900 rounded-xl ">
+    <div className="mb-5 min-[1320px]:h-[19.8rem] h-[16rem]  mt-5  mx-auto py-4 bg-neutral-950 border border-neutral-900 rounded-xl ">
     <div className="flex flex-col items-center justify-center">
         <span className="bg-neutral-800 border border-neutral-700/30 rounded-full p-2"><IconCrown size={25} color="yellow"/></span>
         <h1 className="mt-1 text-neutral-200 font-light ">Let's Work Together</h1>

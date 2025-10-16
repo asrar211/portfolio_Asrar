@@ -2,7 +2,7 @@ import { IconBrandDocker, IconBrandNextjs, IconBrandNodejs, IconBrandReact, Icon
 
 export const Stack = () => {
   return (
-    <div className="max-[768px]:max-w-[85%] mt-5  mx-auto p-4 bg-neutral-950 border border-neutral-900 rounded-xl ">
+    <div className=" mt-5  mx-auto p-4 bg-neutral-950 border border-neutral-900 rounded-xl ">
         <div className="flex flex-col items-center gap-1">
           <h4 className="flex gap-1 items-center text-[13px] text-neutral-400 font-light"><span><IconStack2Filled size={17} color="yellow"/></span> My Stacks</h4>
           <h1 className="text-[15px] font-[300]">Tech Arsenal</h1>

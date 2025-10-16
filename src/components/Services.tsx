@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 export const Services = () => {
   return (
-    <div className="max-[768px]:max-w-[85%] bg-neutral-950 mx-auto mask-l-from- mt-5 border border-neutral-900 rounded-xl  px-0 pt-4 overflow-hidden">
+    <div className=" bg-neutral-950 mx-auto mask-l-from- mt-5 border border-neutral-900 rounded-xl  px-0 pt-4 overflow-hidden">
       <div className="flex flex-col items-center gap-1">
         <h4 className="flex gap-1 items-center text-[13px] text-neutral-400 font-light">
           <span>

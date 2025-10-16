@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 export const Partners = () => {
   return (
-    <div className="max-[768px]:max-w-[85%] h-[13.7rem] bg-neutral-950 mx-auto mask-l-from- mt-5 border border-neutral-900 rounded-xl  px-0 pt-4 overflow-hidden">
+    <div className=" h-[13.7rem] bg-neutral-950 mx-auto mask-l-from- mt-5 border border-neutral-900 rounded-xl  px-0 pt-4 overflow-hidden">
       <div className="flex flex-col items-center gap-1">
         <h4 className="flex gap-1 items-center text-[13px] text-neutral-400 font-light">
           <span>

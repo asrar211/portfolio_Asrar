@@ -38,7 +38,7 @@ export const Accordion = () => {
     },
     ]
   return (
-    <div className="max-[768px]:max-w-[85%] mt-5 min-[1320px]:h-[26rem]  mx-auto py-4 bg-neutral-950 border border-neutral-900 rounded-xl ">
+    <div className=" mt-5 min-[1320px]:h-[26rem]  mx-auto py-4 bg-neutral-950 border border-neutral-900 rounded-xl ">
         <div className="relative flex flex-col items-center gap-1">
           <h4 className="flex gap-1 items-center text-[13px] text-neutral-400 font-light"><span><IconStarsFilled size={17} color="yellow"/></span>Work Process</h4>
           <h1 className="text-[15px] font-[300]">Workflow Highlights</h1>

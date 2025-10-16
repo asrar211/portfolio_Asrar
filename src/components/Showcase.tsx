@@ -3,7 +3,7 @@ import { IconPlus, IconFlagFilled, IconMoodHappyFilled, IconStarFilled, IconFile
 
 export const Showcase = () => {
   return (
-    <div className="max-[768px]:max-w-[85%] mx-auto mt-5 grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div className=" mx-auto mt-5 grid grid-cols-2 md:grid-cols-3 gap-4">
         <ShowCard title="56" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Projects" achievementIcon={<IconFlagFilled size={17} color="yellow"/>}/>
         <ShowCard title="23" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Happy Clients" achievementIcon={<IconMoodHappyFilled size={17} color="yellow"/>}/>
         <ShowCard title="01" titleIcon={<IconPlus size={17} color="blue"/>} achievement="Year Expertise" achievementIcon={<IconStarFilled size={17} color="yellow"/>}/>
