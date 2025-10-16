@@ -1,4 +1,4 @@
-import { IconAi, IconBrandFigma, IconBrandInstagramFilled, IconCode, IconDeviceMobile, IconRocket, IconRocketOff, IconSeo } from "@tabler/icons-react";
+import { IconAi, IconBrandFigma, IconBrandInstagramFilled, IconCode, IconDeviceMobile, IconRocket, IconSeo } from "@tabler/icons-react";
 import { motion } from "motion/react";
 
 export const Partners = () => {

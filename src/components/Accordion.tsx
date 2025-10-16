@@ -1,4 +1,4 @@
-import { IconArrowDown, IconArrowUp, IconCode, IconDirectionSign, IconDiscountCheck, IconDownload, IconHtml, IconPaint, IconPaintFilled, IconPlane, IconStarHalf, IconStarOff, IconStarsFilled, IconTestPipe, IconTestPipe2, IconTestPipe2Filled } from "@tabler/icons-react"
+import { IconArrowDown, IconCode, IconDiscountCheck, IconPaintFilled, IconPlane, IconStarsFilled, IconTestPipe} from "@tabler/icons-react"
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react"
 

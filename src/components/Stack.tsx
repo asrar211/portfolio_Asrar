@@ -1,4 +1,4 @@
-import { IconBrandDocker, IconBrandNextjs, IconBrandNodejs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconSql, IconStack2Filled } from "@tabler/icons-react"
+import { IconBrandDocker, IconBrandNextjs, IconBrandNodejs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconStack2Filled } from "@tabler/icons-react"
 
 export const Stack = () => {
   return (
